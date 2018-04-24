@@ -1,1 +1,5 @@
-console.log('Hello World');
+$(function(){
+	$('#menu').click(function(){
+		$('nav').slideToggle();
+	});
+});
