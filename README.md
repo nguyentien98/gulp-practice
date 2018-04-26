@@ -103,6 +103,21 @@ Cú pháp để chạy nhiều task trong một lệnh:
 
 `gulp.task('build', ['sass', 'useref', 'images', 'fonts']);`
 
+
+## Những phần mềm tương tự Gulp:
+
+1. [Grunt](https://gruntjs.com/)
+
+	Grunt cũng là một phần mềm chạy nhiệm vụ giống như Gulp. Grunt tự động làm cách việc thường xuyên như tinh giảm, biên dịch, kiểm tra đơn vị, và linting. Nó sử dụng dòng lệnh diện để chạy các nhiệm vụ được định nghĩa sẵn trong một tệp.
+
+2. [Pintjs](http://www.pintjs.com/)
+
+	Đây cũng là một tasks runner giống như Gulp và Grunt. Nó cũng dùng để compile SASS / LESS sang CSS. Tuy nhiên nó không được nhiều người biết đến.
+
+3. [Taskr](https://github.com/lukeed/taskr)
+	
+	Taskr cũng giống như Pintjs, nó có khá ít người sử dụng.
+
 ## Mục tiêu
 * [Link Gitpage](https://tiennguyen98.github.io/gulp-practice/dist/)
 * Biết được gulp và cách dùng
