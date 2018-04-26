@@ -7,9 +7,9 @@ Tìm hiểu và cài đặt gulp để compile sass sang css
 Người thực hiện: [ Tiến Nguyễn ](https://github.com/tiennguyen98)
 
 ## Tóm tắt các bước làm trong tài liệu
-1. Cài gulp: npm install gulp -g
-2. Cài module node vào project: npm init
-3. Cài gulp vào project: npm install gulp --save-dev
+1. Cài gulp: `npm install gulp -g`
+2. Cài module node vào project: `npm init`
+3. Cài gulp vào project: `npm install gulp --save-dev`
 4. Tạo cấu trúc thư mục
 5. Tạo file gulpfile.js rồi nhúng gulp vào `var gulp = require('gulp');`
 6. Cài plugin để compile SASS sang CSS: `npm install gulp-sass --save-dev` rồi nhúng plugin vào file js `var sass = require('gulp-sass');`
