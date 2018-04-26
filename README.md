@@ -41,14 +41,18 @@ Thêm task watch để tự động thực thi khi có thay đổi trong file:
 8. Cài useref để nén các file sang mục dist: `npm install gulp-useref --save-dev` nhúng `var useref = require('gulp-useref');`
 
 Thêm task:
-``` gulp.task('useref', function(){
+
+```
+gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulp.dest('dist'))
-}); ```
+});
+```
 
 
 Cài uglify để nén file js: `npm install gulp-uglify --save-dev `
+
 ```
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
@@ -66,14 +70,16 @@ Cài cssnano để nén css: `npm install gulp-cssnano` nhúng file `var cssnano
 
 Thêm vào useref:
 
-``` gulp.task('useref', function(){
+```
+gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
-});```
+});
+```
 
 Thêm vào html file css/js muốn nén:
 ```
